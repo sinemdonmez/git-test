@@ -1,0 +1,135 @@
+
+body {
+    display: flex;
+    align-content: stretch;
+    margin: 0;
+    padding: 0;
+    min-width: 100vh;
+    min-height: 100vh;
+}
+
+div.picture {
+    background-image: url('https://images.unsplash.com/photo-1582794543139-8ac9cb0f7b11?q=80&w=1854&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /*background size koyabilmek buraya??*/
+    min-width: 700px;
+    min-height: 100vh;
+    /* width: 50rem; */
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    margin-top: 400px;
+    background-color: rgba(54, 25, 25, .7);
+}
+.logoimage{
+    height: 140px;
+    width: auto;
+}
+
+@font-face {
+    font-family: my-cool-font;
+    src: url(/home/sinem/Downloads/Norse-Bold.otf);
+}
+
+.logo > span {
+    font-family: my-cool-font, sans-serif;
+    font-size: 100px;
+    color: white;
+}
+
+div.form_container {
+    min-width: 50rem;
+    height: auto;
+    width: 100%;
+
+}
+
+.form_div {
+    box-shadow: 0 6px 2px -2px lightgray;
+}
+
+.upper_text, p.form_text {
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    
+}
+
+.upper_text {
+    margin: 0;
+    padding-top: 180px;
+    padding-left: 50px;
+    padding-bottom: 40px;
+    background-color: #f5f1f1;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    font-weight:500;
+}
+
+.form_row {
+    display: flex;
+    gap: 100px;
+    margin-bottom: 20px;
+}
+
+form {
+    display: table-caption;
+    margin-left: 50px;
+    padding-bottom: 40px;
+
+}
+
+input,
+textarea {
+/* To make sure that all text fields have the same font settings
+    By default, textareas have a monospace font */
+font: 1.5em sans-serif;
+
+/* Uniform text field size */
+width: 300px;
+box-sizing: border-box;
+
+/* Match form field borders */
+border: 1px solid #999;
+
+}
+
+input:focus,
+textarea:focus {
+/* Additional highlight for focused elements */
+border-color: #000;
+}
+
+.button_container {
+    margin-left: 50px;
+    margin-top: 50px;
+    font-family: Arial, sans-serif;
+}
+
+button{
+    background-color: rgb(163, 89, 101);
+    cursor: pointer;
+    padding: 15px 40px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    color: #f9faf8;
+    font-weight: 700;
+    font-size: 1.5em;
+    border: none;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(163, 89, 101);
+
+}
